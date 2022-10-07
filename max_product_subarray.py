@@ -2,7 +2,16 @@ import os
 import sys
 
 def solve(data):
-    
+    # This is problem of dynamic programming.
+    if data is None or len(data) == 0:
+        return 0
+    maxHere = minHere = maxSoFar= data[0]
+    for i in range(1,len(data)):
+        mx, mn = maxHere, minHere
+        maxHere = max(max(mx * data[i], data[i]), mn*data[i])
+        minHere = min(min(mn * data[i], data[i]), mx*data[i])
+        maxSoFar = max(maxHere, maxSoFar)
+    return maxSoFar
     pass
 
 if __name__ == "__main__":
