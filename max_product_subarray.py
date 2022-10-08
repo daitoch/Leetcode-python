@@ -9,7 +9,7 @@ def solve(data):
     for i in range(1,len(data)):
         mx, mn = maxHere, minHere
         # This will take a record of both the maximum and minimum product
-        # of the array
+        # of the array 
         maxHere = max(max(mx * data[i], data[i]), mn*data[i])
         minHere = min(min(mn * data[i], data[i]), mx*data[i])
         maxSoFar = max(maxHere, maxSoFar)
