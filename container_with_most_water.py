@@ -9,8 +9,11 @@ def solve(data):
         result = max (area, result)
         if data[left] < data[right]:
             left += 1
-        else: 
+        elif data[left] < data[right]: 
             right -= 1
+        else:
+            right -= 1
+
     return result
     pass
 
