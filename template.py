@@ -9,4 +9,4 @@ if __name__ == "__main__":
     sys.stdout = open('output.txt', 'w')
     target = int(input())
     data = list(map(int, input().split(' ')))
-    solve(data, target)
+    print(solve(data, target))
