@@ -1,4 +1,4 @@
-import os, sys
+import sys, os
 
 def solve(data, target):
     pass
