@@ -33,6 +33,5 @@ def solve(heights):
 if __name__ == "__main__":
     sys.stdin = open('input.txt', 'r')
     sys.stdout = open('output.txt', 'w')
-    target = int(input())
-    data = list(map(int, input().split(' ')))
-    print(solve(data, target))
+    data = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]
+    print(solve(data))

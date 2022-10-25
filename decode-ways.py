@@ -10,7 +10,7 @@ def solve(data):
             return 0
         res = decode(i + 1)
 
-        if i + 1 <len(data) and (int(data[i]) / 26 <= 1):
+        if i + 2 <= len(data) (int(data[i:i+2]) / 26 <= 1):
             res += decode(i+2)
         dp[i] = res
         return res
