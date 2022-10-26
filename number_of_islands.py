@@ -43,5 +43,6 @@ if __name__ == "__main__":
     sys.stdout = open('output.txt', 'w')
     #target = int(input())
     data = list(map(int, input().split(' ')))
-    graph = [[0,1,1,1,0,0,0],[0,0,1,1,0,1,0]]
+    graph = [[0,1,1,1,0,0,0],
+            [0,0,1,1,0,1,0]]
     print(solve(graph))
