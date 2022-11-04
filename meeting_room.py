@@ -7,7 +7,7 @@ def solve(data):
     last = data[0][1]
     for start, end in data[1:]:
         if start >= last:
-            continue
+            last = end
         else:
             return False
             
